@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sentry_campfire',
-    version='0.1.0',
+    version='0.1.1',
     author='Mustafa Khattab',
     author_email='mustafa.khattab@gmail.com',
     url='https://github.com/mkhattab/sentry-campfire',
