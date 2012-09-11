@@ -36,8 +36,14 @@ class CampfireNotification(Plugin):
     description = 'Send Campfire notifications'
     version = sentry_campfire.VERSION
     author = 'Mustafa Khattab'
-    author_url = 'https://github.com/mkhattab/sentry_campfire'
+    author_url = 'https://github.com/mkhattab/sentry-campfire'
+    resource_links = [
+    ('Bug Tracker', 'https://github.com/mkhattab/sentry-campfire/issues'),
+    ('Source', 'https://github.com/mkhattab/sentry-campfire'),
+    ]
+    
     project_conf_form = CampfireOptionsForm
+
     
     def is_configured(self, project, **kwargs):        
         return all(self.get_option(k, project) for k in ('url', 'token', 'rooms'))
